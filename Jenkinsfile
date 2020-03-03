@@ -1,5 +1,6 @@
 pipeline{
-    
+  agent any
+   stages{
     stage('Checkout')
     {
         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Srineshar/HelloWorld.git']]])
@@ -28,4 +29,5 @@ pipeline{
     {
         echo "Deliver the Code"
     }
+   }
 }
