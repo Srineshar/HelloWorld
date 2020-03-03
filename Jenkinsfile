@@ -10,7 +10,7 @@ pipeline{
     stage("Checkpoint") {
       
       steps{
-      checkpoint 'Completed Build'
+        echo 'Completed Cheking'
       }
     }
     stage('Static Code Analysis')
