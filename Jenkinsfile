@@ -12,6 +12,9 @@ node{
     stage('Static Code Analysis')
     {
         echo "Static Code Analysis"
+        steps {
+        checkpoint 'Completed Build'
+      }
     }
     stage('Build')
     {
