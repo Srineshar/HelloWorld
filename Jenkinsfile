@@ -8,7 +8,7 @@ node{
         workspace=pwd()
         
     }
-    checkpoint 'Completed Checkout'
+   
     stage('Static Code Analysis')
     {
         echo "Static Code Analysis"
