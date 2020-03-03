@@ -9,7 +9,7 @@ node{
         
     }
     stage("Checkpoint") {
-      agent none //running outside of any node or workspace
+      
       
       checkpoint 'Completed Build'
       
