@@ -8,7 +8,11 @@ node{
         workspace=pwd()
         
     }
-   
+    stage("Checkpoint") {
+      agent none //running outside of any node or workspace
+      steps {
+        checkpoint 'Completed Build'
+      }
     stage('Static Code Analysis')
     {
         echo "Static Code Analysis"
