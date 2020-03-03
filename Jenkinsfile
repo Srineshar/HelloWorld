@@ -1,6 +1,4 @@
-def workspace;
-
-node{
+pipeline{
     
     stage('Checkout')
     {
