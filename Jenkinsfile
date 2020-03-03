@@ -13,6 +13,7 @@ node{
       steps {
         checkpoint 'Completed Build'
       }
+    }
     stage('Static Code Analysis')
     {
         echo "Static Code Analysis"
