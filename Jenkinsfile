@@ -5,10 +5,7 @@ pipeline{
     {
       steps{
         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Srineshar/HelloWorld.git']]])
-           }
-      steps{
-        workspace=pwd()
-        }
+      }
     }
     stage("Checkpoint") {
       
